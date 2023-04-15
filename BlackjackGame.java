@@ -1,20 +1,11 @@
-/**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
-  Jordan Vendrame
- Fadil Nizar
- Aromal Suresh Kumar
+/*
+ @author Jordan Vendrame
+ @author Fadil Nizar
+ @author Aromal Suresh Kumar
  12/04/2023
  */
 
-/**
- * The class that models your game. You should create a more specific child of this class and instantiate the methods
- * given.
- *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
- */
+
 import java.util.Scanner;
 
 public class BlackjackGame 
@@ -30,21 +21,18 @@ public class BlackjackGame
   String names;
   System.out.println("Welcome to the Blackjack game!");
   System.out.println();
-  System.out.println("  Here are the rules of BlackJack: ");
-  System.out.println(" Each player is dealt 2 cards. The dealer is also dealt 2 cards.");
-  System.out.println(" Cards are equal to the value written on them. Except the face cards, they are worth 10. The Ace is extra special and is worth either 1 or 11, depending on your your choice.");
-  System.out.println(" The players cards are then added up to find their score.");
-  System.out.println(" Players can choose to Hit, and gain another card from the deck. Players can also choose to Stay, and keep their current cards.");
-  System.out.println(" The Dealer chooses hit until their score is equal to or greater than 17.");
-  System.out.println(" The goal of the game is to have a higher score than the dealer without going over 21.");
-  System.out.println(" If the players and dealers score is the same, it is a Tie and the hand ends."); 
+  System.out.println("  How to play BlackJack: ");
+  System.out.println(" At the start of the game, the dealer and all players are dealt 2 cards");
+  System.out.println(" The value of a card is equal to its pip (number written on it). Except the face cards, they are worth 10. The Ace is extra special and is worth either 1 or 11, depending on your choice.");
+  System.out.println(" Players could choose to Hit, drawing a card from the deck and adding it into their hand. Players can also choose to Stay, and keep their current cards.");
+  System.out.println(" The Dealer MUST hit and draw cards until their score is 17 or higher, at which point they MUST stand.");
+  System.out.println(" The players and dealer's score is calculated by adding up the values of all the cards in their hand ");
+  System.out.println(" Each player attempts to beat the dealer by getting a score as close to 21 as possible, without going over 21; Going over 21 is a bust and causes you to lose.");
+  System.out.println(" If any player has the same score as the dealer, they tie and their hand ends."); //technically its a push, but no time to implement betting
   System.out.println();
   
   // Was hoping to implement multiple players, ran out of time, fragments of that code are still here due to the amount of time it would take to remove.
-  do {
    users = 1;
-   
-  } while (users > 6 || users < 0);
 
   players = new Player[users];
   deck = new Deck();
