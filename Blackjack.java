@@ -1,8 +1,10 @@
-/*
- @author Jordan Vendrame
- @author Fadil Nizar
- @author Aromal Suresh Kumar
- 12/04/2023
+
+
+/**
+ * @author Jordan Vendrame
+ * @author Fadil Nizar
+ * @author Aromal Suresh Kumar
+ * 12/04/2023
  */
 
 public class Blackjack 
